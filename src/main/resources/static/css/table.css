@@ -1,0 +1,33 @@
+th {
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+.members-table {
+    padding-top: 2rem;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    border-radius: 1rem;
+}
+
+thead {
+    color: #043431;
+    border-bottom: solid #09340e 0.1rem;
+
+}
+
+tr, th {
+    border: #09340e 0.1rem solid;
+}
+
+tr:nth-child(2n) {
+    background: coral;
+}
+th:nth-child(5n){
+    background: #ffffff;
+}
+

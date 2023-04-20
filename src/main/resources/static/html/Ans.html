@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>WP 239</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <img src="logo.png" height="100 px">
+
+    <div class="nav-bar">
+        <ul>
+            <li><a href="index.html?_ijt=32ih0uh8gsb4n3gr5less0dl1d&_ij_reload=RELOAD_ON_SAVE">Главная</a></li>
+            <li><a href="Tests.html">Меню</a></li>
+
+        </ul>
+    </div>
+
+</div>
+
+<div class="middle">
+    <p>
+        Этот сайт создан с целью помочь тебе с выбором професи, которая будет подходить тебе по твоим способностям,
+        интересам и приносить удовольствие:)
+    </p>
+    <p>
+        Для красоты стоит добавить еще общего текста
+    </p>
+    <a href="test1.html">Перейти к тесту</a>
+
+</div>
+<div class="footer">
+
+
+</div>
+</body>
+</html>
+<script>
+    function get(url, args, callback) {
+        url += "?"
+        const serialized_args = []
+        for (const key in args) {
+            serialized_args.push(key + "=" + args[key])
+        }
+        url += serialized_args.join("&")
+        $.get(url, callback)
+    }
+
+    get("http://localhost:8080/get_universities", {value: localStorage.getItem("universities")}, function (list) {
+        for (const i in list) {
+            let room = list[i]
+            let block = $("<div></div>")
+            block.append("<p>" + room.programm + "</p>")
+            block.append("<p>" + room.faculty + "</p>")
+            $(".footer").append(block)
+        }
+    })
+</script>
