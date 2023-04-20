@@ -17,17 +17,16 @@ table {
 thead {
     color: #043431;
     border-bottom: solid #09340e 0.1rem;
-
+    background: rgba(114, 218, 212, 0.54);
 }
 
 tr, th {
     border: #09340e 0.1rem solid;
+
 }
 
 tr:nth-child(2n) {
-    background: coral;
+    background: rgba(163, 213, 197, 0.38);
 }
-th:nth-child(5n){
-    background: #ffffff;
-}
+
 
