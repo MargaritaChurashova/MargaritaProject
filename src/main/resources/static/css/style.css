@@ -34,7 +34,7 @@ a{
 }
 
 img {
-    width: 6%;
+    width: 10%;
 }
 
 .middle {
@@ -43,14 +43,14 @@ img {
 
 .footer {
     font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
-    text-decoration: underline;
+    text-decoration: underLine;
     padding-top: 3rem;
     text-align: center;
 
 }
 .footer p{
     margin: 1rem 1rem 1rem auto;
-    color: red;
+    color: #002aff;
 
 }
 .enter-or-register {
