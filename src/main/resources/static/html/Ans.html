@@ -52,7 +52,8 @@
         for (const i in list) {
             let room = list[i]
             let block = $("<div></div>")
-            block.append("<p>" + room.programm + "</p>")
+            block.append("<p style=\"font-weight:bold;\">" + room.programm + "</p>")
+            block.append("<p style=\"font-style:italic;\">" + room.ege + "</p>")
             block.append("<p>" + room.faculty + "</p>")
             $(".footer").append(block)
         }

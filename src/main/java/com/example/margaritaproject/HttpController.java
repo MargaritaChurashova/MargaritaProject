@@ -25,7 +25,7 @@ public class HttpController {
     @GetMapping(value = "/get_universities", produces = "application/json")
     List<University> getNearUniversityByField(int value) {
         return getUniversities().stream().sorted(
-                Comparator.comparingInt((University it) -> Math.abs(it.getRating() - value)).reversed()).toList().subList(0, 5);
+                Comparator.comparingInt((University it) -> Math.abs(it.getRating() - value))).toList().subList(0, 5);
     }
 
 

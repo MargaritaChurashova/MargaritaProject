@@ -43,14 +43,13 @@ img {
 
 .footer {
     font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
-    text-decoration: underLine;
     padding-top: 3rem;
     text-align: center;
 
 }
 .footer p{
     margin: 1rem 2rem 1rem auto;
-    color: #002aff;
+    color: #41051d;
 
 }
 .enter-or-register {

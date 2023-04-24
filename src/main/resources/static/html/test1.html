@@ -151,14 +151,20 @@
                     if (input[i]) {
                         counter++
                         ans += (i+1)
-                        //alert validation
+
                     }
                 }
                 if(counter === 0){
                     alert("Вопрос №"+this.id+  " не отвечен");
                 }
             })
-
+            if (ans > 15 && ans <= 30)
+                ans+=1000;
+            if (ans > 30 && ans <= 45)
+                ans += 2000;
+            if (ans > 45 && ans <= 60)
+                ans += 3000;
+            alert(ans);
             localStorage.setItem("universities", ans)
             location.href = "/MargaritaProject/static/html/Ans.html"
 
