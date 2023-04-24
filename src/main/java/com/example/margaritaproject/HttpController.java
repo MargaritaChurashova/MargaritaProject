@@ -17,13 +17,14 @@ public class HttpController {
     public HttpController(Database db) {
         this.db = db;
     }
-
+// функция getUniversities() возвращает данные из базы данных
     List<University> getUniversities() {
         return db.getUniversities();
     }
 
     @GetMapping(value = "/get_universities", produces = "application/json")
     List<University> getNearUniversityByField(int value) {
+        //эта функция возвращает отсортированный массив по заданному числу (результат теста)
         return getUniversities().stream().sorted(
                 Comparator.comparingInt((University it) -> Math.abs(it.getRating() - value))).toList().subList(0, 5);
     }

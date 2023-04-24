@@ -1,5 +1,5 @@
 package com.example.margaritaproject.data;
-
+//класс для иниициализации данных, хранящихся в одной строке базы данных
 public class University extends DatabaseObject {
 
     private String programm;
@@ -8,14 +8,14 @@ public class University extends DatabaseObject {
     private int rating;
 
 
-
+    //задаем то, что долдны получить в конструкторе
     public University(String programm, String faculty, String ege, int rating) {
         this.programm = programm;
         this.faculty = faculty;
         this.ege = ege;
         this.rating = rating;
     }
-
+    //прописываем геттеры и сеттеры
     public String getProgramm() {
         return programm;
     }

@@ -47,7 +47,7 @@
         url += serialized_args.join("&")
         $.get(url, callback)
     }
-
+    //метод, который обращается к тому, что получено в контроллере и выводит на данной странице то, что мы хотим получить
     get("http://localhost:8080/get_universities", {value: localStorage.getItem("universities")}, function (list) {
         for (const i in list) {
             let room = list[i]

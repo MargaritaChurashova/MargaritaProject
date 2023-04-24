@@ -138,7 +138,9 @@
 </body>
 </html>
 <script>
+    //работа с полученными ответами
     $("#send").click(function g() {
+        //запоминаем полученные ответы и складываем их в массив
             let ans = 0
             let forms = $(".q1")
             forms.each(function a() {
@@ -148,6 +150,7 @@
                     let local = document.getElementById(this.id).checked
                     input.push(local)
                 })
+                //считаем численный результат теста, обращаясь к созданному ранее массиву
                 let counter = 0
                 for (let i = 0; i < input.length; i++) {
 
@@ -157,10 +160,12 @@
 
                     }
                 }
+                //проверяем на все ли вопросы есть ответы
                 if(counter === 0){
                     alert("Вопрос №"+this.id+  " не отвечен");
                 }
             })
+        //обрабатываем полученный результат для сопоставления с базой данных
             if (ans > 15 && ans <= 30)
                 ans+=1000;
             if (ans > 30 && ans <= 45)
@@ -168,7 +173,9 @@
             if (ans > 45 && ans <= 60)
                 ans += 3000;
             //alert(ans);
+        //сохраняем полученное значение, чтобы к нему можно было обратиться в других классах
             localStorage.setItem("universities", ans)
+        //перенаправление на следующую страницу
             location.href = "/MargaritaProject/static/html/Ans.html"
 
         }
