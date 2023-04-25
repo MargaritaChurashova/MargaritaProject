@@ -13,7 +13,7 @@
 
 .nav-bar {
     list-style-type: none;
-    text-decoration-color: #043431;
+    text-decoration-color: rgba(65, 5, 29, 0.91);
 }
 
 .nav-bar ul {
@@ -61,19 +61,19 @@ img {
     margin-top: 1rem;
 }
 .glo{
-    color:#00c6ff;
+    color: rgb(65, 5, 29);
     padding: 10px 20px;
     width:1000px;
     text-decoration:none;
     text-align:center;
     margin:20px auto;
     display: block;
-    background-image: linear-gradient(to left,transparent,transparent 50%,#00c6ff 50%,#00c6ff);
+    background-image: linear-gradient(to left,transparent,transparent 50%, rgba(134, 7, 58, 0.81) 50%, rgba(65, 5, 29, 0.91));
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .25s ease-in;
     font: 400 18px tahoma;
-    border: 1px solid #00C6FF;
+    border: 2px solid rgba(65, 5, 29, 0.89);
 }
 .glo:hover {
     background-position: 0 0;

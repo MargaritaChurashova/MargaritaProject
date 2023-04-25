@@ -96,8 +96,8 @@ h1 {
 }
 
 #signin button[type="submit"]:hover {
-    color: rgb(0, 126, 165);
-    text-shadow: 0 0 10px rgb(0, 126, 165);
+    color: rgb(65, 5, 29);
+    text-shadow: 0 0 10px rgb(65, 5, 29);
     cursor: pointer;
 }
 
